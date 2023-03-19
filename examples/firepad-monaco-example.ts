@@ -1,7 +1,27 @@
-import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
-import firebase from "firebase/app";
-import "firebase/database";
-import "firebase/firestore";
+import * as monaco from 'monaco-editor';
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
+import "firebase/compat/database";
+
+
+// @ts-ignore
+self.MonacoEnvironment = {
+	getWorkerUrl: function (moduleId, label) {
+		if (label === 'json') {
+			return './json.worker.bundle.js';
+		}
+		if (label === 'css' || label === 'scss' || label === 'less') {
+			return './css.worker.bundle.js';
+		}
+		if (label === 'html' || label === 'handlebars' || label === 'razor') {
+			return './html.worker.bundle.js';
+		}
+		if (label === 'typescript' || label === 'javascript') {
+			return './ts.worker.bundle.js';
+		}
+		return './editor.worker.bundle.js';
+	}
+};
 
 import * as Firepad from "../src";
 

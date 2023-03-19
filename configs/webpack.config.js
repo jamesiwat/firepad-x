@@ -17,26 +17,6 @@ module.exports = {
       export: "default",
     },
   },
-  externals: {
-    "monaco-editor": {
-      root: "monaco",
-      commonjs: "monaco-editor",
-      commonjs2: "monaco-editor",
-      amd: "monaco-editor",
-    },
-    "firebase/app": {
-      root: "firebase.app",
-      commonjs: "firebase/app",
-      commonjs2: "firebase/app",
-      amd: "firebase/app",
-    },
-    "firebase/database": {
-      root: "firebase.database",
-      commonjs: "firebase/database",
-      commonjs2: "firebase/database",
-      amd: "firebase/database",
-    },
-  },
   module: {
     rules: [
       {
