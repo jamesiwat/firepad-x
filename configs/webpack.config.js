@@ -24,17 +24,17 @@ module.exports = {
       commonjs2: "monaco-editor",
       amd: "monaco-editor",
     },
-    "firebase/compat/app": {
+    "firebase/app": {
       root: "firebase.app",
-      commonjs: "firebase/compat/app",
-      commonjs2: "firebase/compat/app",
-      amd: "firebase/compat/app",
+      commonjs: "firebase/app",
+      commonjs2: "firebase/app",
+      amd: "firebase/app",
     },
-    "firebase/compat/database": {
+    "firebase/database": {
       root: "firebase.database",
-      commonjs: "firebase/compat/database",
-      commonjs2: "firebase/compat/database",
-      amd: "firebase/compat/database",
+      commonjs: "firebase/database",
+      commonjs2: "firebase/database",
+      amd: "firebase/database",
     },
   },
   module: {

@@ -1,7 +1,7 @@
 import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
-import firebase from "firebase/compat/app";
-import "firebase/compat/database";
-import "firebase/compat/firestore";
+import firebase from "firebase/app";
+import "firebase/database";
+import "firebase/firestore";
 
 import * as Firepad from "../src";
 
@@ -52,7 +52,7 @@ const init = function (): void {
     trimAutoWhitespace: false,
   });
 
-  const firepad = Firepad.fromMonacoWithFirestore(firestoreRef, editor, {
+  const firepad = Firepad.fromMonacoWithFirebase(firebaseRef, editor, {
     userName: `Anonymous ${Math.floor(Math.random() * 100)}`,
     defaultText: `// typescript Editing with Firepad!
 function go() {
