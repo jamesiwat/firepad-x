@@ -1,4 +1,4 @@
-import { editor } from "monaco-editor";
+import { editor } from "monaco-editor/esm/vs/editor/editor.api";
 import * as Utils from "../../src/utils";
 import { clearMock, resetMock } from "./factory-utils";
 

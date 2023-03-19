@@ -1,4 +1,4 @@
-import { editor } from "monaco-editor";
+import { editor } from "monaco-editor/esm/vs/editor/editor.api";
 import { fromMonaco } from "../src/firepad-monaco";
 import { getDatabaseAdapter, getEditorAdapter } from "./factory";
 import { getMonacoEditor } from "./factory/monaco-editor.factory";

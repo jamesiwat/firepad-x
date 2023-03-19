@@ -7,7 +7,7 @@
  * file. If it was not, please see <https://opensource.org/licenses/MIT>
  */
 
-import * as monaco from "monaco-editor";
+import * as monaco from "monaco-editor/esm/vs/editor/editor.api";
 
 import { ClientIDType } from "./editor-adapter";
 import * as Utils from "./utils";
